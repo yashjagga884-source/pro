@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
-import toast from 'react-hot-toast'
+import { motion } from '../components/common/StaticMotion'
+import { Mail, Phone, MapPin, Send } from '../components/common/Icons'
+import toast from '../utils/toast'
 
 export function Contact() {
   const [formData, setFormData] = useState({

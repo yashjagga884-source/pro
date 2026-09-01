@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { ArrowLeft, Bookmark, Share2 } from 'lucide-react'
+import { motion } from '../components/common/StaticMotion'
+import { ArrowLeft, Bookmark, Share2 } from '../components/common/Icons'
 import { CAREERS } from '../constants/data'
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import toast from 'react-hot-toast'
+import toast from '../utils/toast'
 
 export function CareerDetails() {
   const { id } = useParams()
